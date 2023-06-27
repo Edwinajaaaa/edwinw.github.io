@@ -186,8 +186,10 @@ section .content img {
     0% {
       left: -50%;
     }
+      
     100% {
-      left: 64%;
+        
+      left: 60%;
     }
   }
   
