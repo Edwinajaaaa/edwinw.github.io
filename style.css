@@ -184,12 +184,12 @@ section .content img {
   
   @keyframes slide-in {
     0% {
-      left: -25%;
+      left: -10%;
     }
       
-    100% {
+    0% {
         
-      left: 25%;
+      left: 10%;
     }
   }
   
