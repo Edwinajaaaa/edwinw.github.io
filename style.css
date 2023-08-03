@@ -1,0 +1,375 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    background-color: #312d2f;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding-right:50px;
+    color: rgba(241, 241, 0, 0.938);
+    font-weight: 600;
+    font-size: 30px;
+    justify-content: center;
+    
+}
+.sidebar{
+    background-color: #444;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    margin-top: 30px;
+    transform: translate(-250px);
+    transition: transform 250ms ease-in-out;
+
+}
+.menu li a{
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    padding: 20px;
+    border-bottom: 1px solid rgba(227, 224, 224, .2);
+    color: rgba(255, 255, 0, 0.788);
+}
+.menu li a:hover{
+    background-color: #ddd;
+    color: #361d23;
+    transition: all 0.4s;
+    text-align: center;
+}
+.toggle-icon div{
+    background-color: #f1e8e6;
+    width: 100%;
+    height: 3px;
+    transition: all 0.3s;
+}
+.toggle-icon{
+    position: fixed;
+    top: 22px;
+    left: 15px;
+    width: 22px;
+    height: 22px;
+    z-index: 9999;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+
+.profile{
+    text-align: center;
+    padding: 20px;
+    display: block;
+    cursor: pointer;
+}
+
+.profile img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 100px;
+    border: 2px solid #f1e8e6;
+}
+.profile h3{
+    margin: 10px 0;
+    color: yellow;
+}
+.profile li{
+    list-style: none;
+    display: inline-flex;
+    margin: 0 5px;
+    font-size: 20px;
+    padding: 10px;
+    transition: all 0.5s;
+}
+.profile a{
+    color: inherit;
+}
+.profile li:hover{
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #361d23;
+    border-radius: 60px;
+}
+.bar-center{
+    margin: 3px 0;
+}
+input[type="checkbox"]:checked ~ .sidebar{
+    transform: translate(0);
+}
+input[type="checkbox"]:checked ~ .toggle-icon> .bar-top{
+    transform: rotate(135edge);
+    margin-top: 8px;
+}
+input[type="checkbox"]:checked ~ .toggle-icon> .bar-top{
+    opacity: 0;
+}
+input[type="checkbox"]:checked ~ .sidebar{
+    transform: rotate(-135edge);
+    margin-top: -12px;
+}
+/* About me*/
+body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1717;
+    color: rgb(11, 140, 245);
+  }
+  
+  .profile1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .profile-info {
+    text-align: left;
+  }
+  
+  .profile-info h1 {
+    font-size: 32px;
+    margin: 0;
+  }
+  
+  .profile-info h2 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .profile-info p {
+    font-size: 18px;
+    color: #555;
+  }
+  /*gallery*/
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #181816;
+  }
+  
+  .gallery {
+    text-align: center;
+    padding: 20px;
+    white-space: nowrap;
+    overflow-x: auto;
+    
+  }
+  
+  .photo {
+    display: inline-block;
+    border: 2px solid #333;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .photo img:hover {
+    transform: scale(1.1);
+  }
+  
+  .section-info,
+  .section-contact {
+    background-color: #115ccc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-info h2,
+  .section-contact h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .section-info p,
+  .section-contact p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  
+  .section-info,
+  .section-contact {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-info h2,
+  .section-contact h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .section-info p,
+  .section-contact p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  
+/*game*/
+body {
+  margin:0;
+  height:100vh;
+  overflow:hidden;
+}
+
+#toolbar {
+  position:absolute;
+  width:100%;
+  height:10%;
+  background: none;
+  display: flex;
+  justify-content: center;
+  top:25%;
+}
+
+#toolbar > input {
+  align-self: center;
+  display:block;
+  margin:10px;
+  padding:15px;
+  color:lightgray;
+  background-color: teal;
+  border:2px solid lightgray;
+  outline:none;
+  border-radius:15px;
+  font-family: monospace;
+}
+
+
+canvas {
+  overflow:hidden;
+}
+
+.background {
+
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+/*spiner*/
+.spinner {
+  width: 80px;
+  height: 80px;
+  --clr: rgb(127, 207, 255);
+  --clr-alpha: rgb(127, 207, 255, .1);
+  animation: spinner 2s infinite linear;
+  transform-style: preserve-3d;
+}
+
+.spinner > div {
+  background-color: var(--clr-alpha);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 5px solid var(--clr);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:10vh; /* Ini akan mengatur tinggi container sesuai dengan tinggi viewport (layar) */
+  margin-top: 75px;
+  /* Tambahkan properti lain seperti lebar dan tinggi jika perlu */
+}
+
+/* Kode CSS .spinner dan .spinner > div tetap sama seperti sebelumnya */
+
+
+
+.spinner div:nth-of-type(1) {
+  transform: translateZ(-40px) rotateY(180deg);
+}
+
+.spinner div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+}
+
+.spinner div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+
+.spinner div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+}
+
+.spinner div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+}
+
+.spinner div:nth-of-type(6) {
+  transform: translateZ(40px);
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg) rotateX(0deg) rotateY(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg) rotateX(180deg) rotateY(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg) rotateX(360deg) rotateY(360deg);
+  }
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
