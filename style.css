@@ -175,6 +175,7 @@ body {
     padding: 20px;
     white-space: nowrap;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     
   }
   
