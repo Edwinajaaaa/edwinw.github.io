@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHOOL GALLERY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <div class="header">ABOUT ME</div>
+    <input type="checkbox" class="toggle-sidebar" id="toggle-sidebar">
+    <label for="toggle-sidebar" class="toggle-icon">
+        <div class="bar-top"></div>
+        <div class="bar-center"> </div>
+        <div class="bar-bottom"></div>
+    </label>
+    
+
+    <div class="sidebar">
+        <div class="profile">
+            <img src="https://images.unsplash.com/photo-1690652067906-f52dcffa0ab9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1w
+            YWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="https://images.unsplash.com/photo-1690652067906-f52dcffa0ab9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVu
+            fDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80">
+            <h3>EdwinXIPS2</h3>
+            <ul>
+                <li><a href="#"><i class="fa fa-instragam"></i></a></li>
+                <li><a href="#"><i class="fa fa-instragam"></i></a></li>
+                <li><a href="#"><i class="fa fa-instragam"></i></a></li>
+            </ul>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="game.html">Game</a></li>
+            <li><a href="gallery.html">Galeery MA-alhidayah</a></li>
+        </ul>
+    </div>
+    <div class="container">
+    <div class="spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    
+      
+    <div class="profile1">
+        <div class="profile-picture">
+          <img src="data:image/jpeg;base64,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" alt="Foto Anda">
+        </div>
+        <div class="profile-info">
+          <h1>Halo, Nama Saya Edwin</h1>
+          <h2>Edwin</h2>
+          <p>Selamat datang di halaman perkenalan saya!,
+            saya serorang otodidak</p>
+        </div>
+      </div>
+      
+    <style>
+        .header{
+            background-color: #312d2f;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding-right:50px;
+    color: rgba(25, 0, 255, 0.938);
+    font-weight: 600;
+    font-size: 30px;
+    justify-content: center;
+
+
+
+        }
+    </style>
+</body>
+</html>
